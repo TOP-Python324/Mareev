@@ -1,12 +1,17 @@
 n = int(input("Введите количество разрядов: "))
-lst=[]
-for i in range(2, n+1):
-    for j in lst:
+num = "9" * n
+lst = []
+for i in range(2, int(num)):
+    for j in range(2, i):
         if i % j == 0:
             break
+        elif len(str(i)) != n:
+            break
     else:
-        lst.append(i)
+     lst.append((i))
+if n > 1:
+    lst.remove(2)
 print(len(lst))
 
-# Введите количество разрядов: 21
-# 8
+# Введите количество разрядов: 4
+# 1061
