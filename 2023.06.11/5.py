@@ -15,3 +15,6 @@ for key, value in scores_letters.items():
         if el in value:
             result += key
 print(result)
+
+# Введите слово: полиформизм
+# 26
